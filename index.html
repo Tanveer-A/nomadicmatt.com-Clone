@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Nomadic Matt
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.header{
+			background:black;
+			height:125px;
+		}
+		.socialsites{
+			margin-left:825px;
+			margin-top:18px;
+		}
+		#search1{
+			margin-left:12px;
+			width:280px;
+			height:30px;
+			margin-top:18px;
+			font-size:18px;
+			color:gray;
+		}
+		#logo{
+			width:245px;
+			height:60px;
+			margin-left:80px;
+		}
+		.fa{
+			font-size:18px;
+			width:28px;
+			text-align:center;
+			text-decoration:none;
+			margin:5px 2px;
+		}
+		.fa:hover{
+			opacity:0.7;
+		}
+		.fa-facebook{
+			
+			color:white;
+		}
+		.fa-twitter{
+			
+			color:white;
+		}
+		.fa-instagram{
+			
+			color:white;
+		}
+		.fa-pinterest{
+			
+			color:white;
+		}
+		.fa-shopping-cart{
+			
+			color:white;
+		}
+		#nav1{
+			margin-top:30px;
+			margin-left:200px;
+			display:inline-block;
+			vertical-align:top;
+		}
+		#nav1 a{
+			padding:3px;
+			color:white;
+			text-decoration:none;
+			font-family:Arial Narrow;
+			font-size:18px;
+			font-weight:bold;
+		}
+		#nav1 a:hover{
+			color:dodgerBlue;
+		}
+		#nav1 a.sh:hover{
+			color:white;
+		}
+		#nav1 i:hover{
+			color:dodgerBlue;
+		}
+		.back1{
+			width:100%;
+			height:480px;
+			background-image:url("bk.jpg");
+		}
+		.back1 h1{
+			position: absolute;
+			color:white;
+			margin-left:650px;
+			margin-top:105px;
+			font-size:50px;
+			font-family:Arial narrow;
+		}
+		.back1 h2{
+			position: absolute;
+			color:white;
+			margin-left:780px;
+			margin-top:164px;
+			font-size:35px;
+			font-family:Arial narrow;
+		}
+		.back1 .search2{
+			width:550px;
+			height:45px;
+			font-size:22px;
+			margin-left:680px;
+			margin-top:214px;
+		}
+		ul.csv { 
+			list-style: none; margin: 0; padding: 0;
+			margin-left:625px;
+			margin-top:18px;
+			font-size:20px;
+			color:white;
+		}
+		ul.csv li 
+		{
+			display: inline; 
+		}
+		ul.csv li:after { 
+			content: ","; 
+		}
+		ul.csv li:last-child:after {
+			content: "";
+		}	
+		ul.csv li:first-child:after {
+			content: "";
+		}
+		ul.csv li:first-child:hover{
+			cursor:text;
+		}
+		ul.csv li:hover{
+			cursor:pointer;
+		}
+		.back2{
+			position:absolute;
+			background: #2e5cb8;
+			width:100%;
+			height:100px;
+		}
+		.back2 td{
+			color:white;
+			font-size:23px;
+			font-family:Arial narrow;
+		}
+		.back2 input{
+			font-size:18px;
+			width:350px;
+			height:50px;
+		}
+		.back2 button{
+			font-size:18px;
+			width:136px;
+			height:52px;
+			color:white;
+			background:#70db70;
+			border-radius:10px;
+			border:0;
+			vertical-align:bottom;
+		}
+		.back2 button:hover{
+			cursor:pointer;
+		}
+		.back3{
+			width:100%;
+			height:400px;
+			word-wrap:break-word;
+		}
+		.back3 h1{
+			position:absolute;
+			font-size:44px;
+			margin-top:175px;
+			margin-left:500px;
+			font-family:arial narrow;
+		}
+		.back3 #more{
+			position:absolute;
+			width:220px;
+			height:50px;
+			border-radius:10px;
+			margin-top:870px;
+			margin-left:600px;
+			font-size:20px;
+			border:1px solid black;
+			background:white;
+		}
+		.back3 #more:hover{
+			cursor:pointer;
+		}
+		ul.lat{
+			position:absolute;
+			list-style: none; margin: 0; padding: 0;
+			margin-top:270px;
+			margin-left:100px;
+		}
+		ul.lat li{
+			display:inline-block;
+		}
+		ul.lat li:after { 
+			content: ""; 
+		}
+		figure{
+			position:relative;
+			width:400px;
+			height:290px;
+			font-size:20px;
+			font-family:arial narrow;
+			display:table;
+			font-weight:bold;
+		}
+		figcaption{
+			width:380px;
+			text-align:center;
+		}
+		.back4{
+			position:relative;
+			width:100%;
+			margin-top:600px;
+			background:lightgray;
+		}
+		.back4 .d1 .hh1{
+			margin-left:100px;
+			margin-top:50px;
+			font-size:32px;
+			font-family:arial narrow;
+		}
+		.back4 .d1 .pp{
+			margin-left:100px;
+			margin-top:5px;
+			width:600px;
+			font-size:21px;
+			word-wrap:break-word;
+		}
+		.back4 .d1 a:link{
+			color:lightblue;
+			text-decoration:none;
+			background-color:transparent;
+		}
+		.back4 .d1 a:visited{
+			color:dodgerblue;
+			text-decoration:none;
+			background-color:transparent;
+		}
+		.back4 .d2 .sec{
+			margin-left:800px;
+			margin-top:50px;
+			font-size:32px;
+			font-family:arial narrow;
+		}
+		.back4 .d2 ul li {
+			margin-left:805px;
+			color: dodgerblue;
+			font-size:20px;
+			list-style-type:none;
+		}
+		.back4 .d2 ul li:before {
+			content: '\2022 ';
+			color: black;
+			font-size:24px;
+			padding-right: 0.5em;
+		}
+		.back4 .d2 h2{
+			margin-left:860px;
+			font-family:arial arrow;
+			font-size:24px;
+		}
+		.back5 
+		{
+			position:relative;
+			width:100%;
+		}
+		.back5 h1{
+			margin-top:100px;
+			margin-left:400px;
+			font-size:44px;
+			font-family:arial narrow;
+		}
+		.back5 img{
+			margin-left:100px;
+		}
+		.back5 a:link{
+			color:lightblue;
+			text-decoration:none;
+			background-color:transparent;
+		}
+		.back5 a:visited{
+			color:dodgerblue;
+			text-decoration:none;
+			background-color:transparent;
+		}
+		.back5 h2{
+			margin-top:450px;
+			margin-left:200px;
+			font-size:44px;
+			font-family:arial narrow;
+		}	
+		.back6{
+			position:relative;
+			background:dodgerblue;
+			width:100%;
+			margin-top:470px;
+			color:white;
+		}
+		.back6 h2{
+			text-decoration:none;border-bottom:1px dashed white;
+		}
+		.back6 .fa{
+			font-size:30px;
+			width:30px;
+			text-align:center;
+			text-decoration:none;
+			margin:7px 3px;
+		}
+		.back6 a:link{
+			color:white;
+			text-decoration:none;
+			background-color:transparent;
+		}
+		.back6 a:visited{
+			color:white;
+			text-decoration:none;
+			background-color:transparent;
+		}
+		.back6 p{
+			line-height:25px;
+		}
+	</style>
+</head>
+<body>
+<div class="header" id="header">
+	<span class="socialsites">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-pinterest"></a>
+	</span>
+	<input type="text" id="search1" placeholder="  Search This Site">
+	<img id="logo" src="logo1.jpg">
+	<nav id="nav1">
+		<a href="#">TRAVEL TIPS</a>
+		<a href="#">ABOUT</a>
+		<a href="#">BLOG</a>
+		<a href="#">DESTINATIONS</a>
+		<a href="#">RESOURCES</a>
+		<a href="#">COMMUNITY</a>
+		<a href="#">BLOG SCHOOL</a>
+		<a class="sh" href="#" style="background:dodgerBlue;border-radius:8px">SHOP</a>
+		<a class="cart" href="#" ><i class="fa fa-shopping-cart"></i></a>
+	</nav>
+</div>
+<div class="back1" id="back1">
+	<h1>Travel smarter, cheaper, longer</h1>
+	<h2>Where do yo want to go?</h2>
+	<input type="text" id="search2" class="search2" placeholder="  Search nomadicmatt.com">
+	<ul class="csv">
+		<li><b>Popular Searches </b>:</li>
+		<li>South East Asia</li>
+		<li>Europe</li>
+		<li>Travel Hacking</li>
+		<li>Insurance</li>
+		<li>Paris</li>
+	</ul>
+</div>
+<div class="back2">
+	<table style="margin:0 auto;margin-top:22px">
+	<tr>
+	<td width="300px"><b>GET MY BEST STUFF SENT</b></td>
+	<td width="375px" rowspan="2">
+		<input type="text" id="name" placeholder="  First Name">
+	</td>	
+	<td width="375px" rowspan="2">
+		<input type="email" id="email" placeholder="  Email Address">
+	</td>	
+	<td rowspan="2">
+		<button value="SEND ME TIPS" id="btn1">SENT ME TIPS</button>
+	</td>	
+	</tr>
+	<tr>
+	<td><b> STRAIGHT TO YOU!</b></td>
+	</tr>
+	</table>
+</div>
+<div class="back3">
+	<h1>Latest from the Blog</h1>
+	<ul class="lat">
+	<li><figure><img src="p1.jpg"><figcaption>GIVING BACK: PLEASE CHECK OUT THESE SOCIAL IMPACT ORGANIZATIONS</figcaption></figure></li>
+	<li><figure><img src="p2.jpg"><figcaption>WORK FROM HOME GIFT GUIDE: 21 AMAZING GIFTS FOR REMOTE WORKERS</figcaption></figure></li>
+	<li><figure><img src="p3.jpg"><figcaption>TULUM IS UTTERLY TERRIBLE.</figcaption></figure></li>
+	<li><figure><img src="p4.jpg"><figcaption>PATREON NEWS: MORE PERKS, POSTS, AND OTHER UPDATES</figcaption></figure></li>
+	<li><figure><img src="p5.jpg"><figcaption>14 GREAT TRAVEL BACKPACKS FOR YOUR NEXT TRIP</figcaption></figure></li>
+	<li><figure><img src="p6.jpg" width="380px" height="220px"><figcaption>MY 2020 HOLIDAY GIFT GUIDE FOR TRAVELERS</figcaption></figure></li>
+	</ul>
+	<button name="more" id="more" value="VIEW MORE">VIEW MORE >></button>
+</div>
+<div class="back4">
+	<div class="d1" style="float:left;" width="50%">
+	<h1 class="hh1">About Nomadic Matt</h1>
+	<img style="margin-left:100px ;margin-top:10px;" src="m.jpg" width="600px" height="280px"><br>
+	<p class="pp">Welcome! Everyday I wake up with one goal in mind: “How can I help other people travel better for less?” It’s my mission now to help travelers like yourself to realize their travel dreams.
+
+		<br><br>Since 2008, I’ve helped millions of people save money, go more places, and have a more authentic experience when they get there.
+
+		<br><br>This website has been featured in major media time and time again because it’s got the best budget advice out there. My goal is to make you a smarter traveler. I want everyone to travel wherever they want, as often as they want.
+		<br><br><b><a href="#">Learn more about my story >>></b></a>
+	</p>
+	</div>
+	<div class="d2">
+	<h1 class="sec">My Most Popular Travel Advice</h1>
+	<ul class="d2ul">
+	<li>COVID Travel Resources</li>
+	<li>How to Find Cheap Flights</li>
+	<li>How to Find Cheap Accommodation</li>
+	<li>How to Choose a Backpack</li>
+	<li>How to Get an RTW Ticket</li>
+	<li>17 Steps for Planning a Trip</li>
+	<li>My Ultimate Packing Guide</li>
+	<li>How to Buy Travel Insurance</li>
+	<li>11 Tips for New Travelers</li>
+	<li>11 Tips for New Travelers</li>
+	<li>My Favorite Hostels</li>
+	<li>Solo Female Travel Tips</li>
+	<li>How to Pick the Right Travel Credit Card</li>
+	<li>14 Travel Scams to Avoid</li>
+	<li>15 Ways to Work Overseas</li>
+	</ul>
+	<br>
+	<br>
+	<h2>My Advice Has Been Featured In:</h2>
+	<table style="margin-left:780px;padding:10px;border-spacing:20px;">
+	<tr>
+	<td><a href="#"><img src="cnn.png" width="110px" height="40px"></a></td>
+	<td><a href="#"><img src="bbc.png" width="110px" height="40px"></a></td>
+	<td><a href="#"><img src="tg.png" width="110px" height="60px"></a></td>
+	</tr>
+	<tr>
+	<td><a href="#"><img src="fox.png" width="90px" height="60px"></a></td>
+	<td><a href="#"><img src="time.png" width="110px" height="40px"></a></td>
+	<td><a href="#"><img src="ap.png" width="110px" height="60px"></a></td>
+	</tr>
+	<tr>
+	<td><a href="#"><img src="wsj.png" width="110px" height="40px"></a></td>
+	<td><a href="#"><img src="natgeo.png" width="110px" height="40px"></a></td>
+	<td><a href="#"><img src="nkt.png" width="110px" height="60px"></a></td>
+	</tr>
+	</table>
+	</div>
+</div>
+<div class="back5">
+	<h1>Nomadic Matt's Travel Guides</h1><br>
+	<div style="width:50%;float:left">
+	<img src="book.png" width="500" height="400">
+	</div>
+	<div style="width:42%;float:left;font-size:20px;font-family:verdana;">
+	<p>I've written tons guidebooks that will help you travel cheaper, better, and smarter. Unlike other guidebooks, these guides are specifically written for budget travelers! They contain detailed tips, advice, and information so you can get off the beaten path and away from the crowds as well as save money without sacrificing comfort!
+	<br><br>With these books, you'll get the practical, straightforward advice you need to be a better traveler.
+	<br><br>
+	<a href="#">Check them out today and get one for your next trip!</a>
+	</p>
+	</div>
+	<h2>Learn How to Make Money Online - And Work Anywhere!</h2><br>
+	<div style="width=50%;float:left;">
+	<img src="man.jpg" width="510px" height="250px">
+	</div>
+	<div style="width:42%;margin-left:80px;float:left;font-size:19px;font-family:verdana;">
+	<p>
+		Want to learn how to have a successful blog that helps people, lets you travel, gets you heard above the noise, and makes you money? I put my twelve years of experience into a practical, no BS masterclass because I firmly believe there is plenty of room for new creators.
+		<br><br>You'll get weekly strategy calls, ongoing tech support, and direct feedback from me on your writing and content.
+		<br><br><a href="#">Click here to check out the program and get started today.</a>
+	</p>
+	</div>
+</div>
+<div class="back2" style="margin-top:370px">
+	<table style="margin:0 auto;margin-top:22px">
+	<tr>
+	<td width="300px"><b>GET MY BEST STUFF SENT</b></td>
+	<td width="375px" rowspan="2">
+		<input type="text" id="name" placeholder="  First Name">
+	</td>	
+	<td width="375px" rowspan="2">
+		<input type="email" id="email" placeholder="  Email Address">
+	</td>	
+	<td rowspan="2">
+		<button value="SEND ME TIPS" id="btn1">SENT ME TIPS</button>
+	</td>	
+	</tr>
+	<tr>
+	<td><b> STRAIGHT TO YOU!</b></td>
+	</tr>
+	</table>
+</div>
+<div class="back6">
+	<div style="margin-left:100px;margin-top:20px;width:120px;float:left;font-size:15px;font-family:arial ;">
+	<h2>ABOUT US</h2><br>
+	<p>
+		<a href="#">About Matt</a><br><a href="#">Copyright</a><br><a href="#">Privacy Policy</a><br><a href="#">Contact<br></a><a href="#">Write For Us</a>
+	</p>
+	</div>
+	<div style="margin-left:50px;margin-top:20px;width:185px;float:left;font-size:15px;font-family:arial ;">
+	<h2>TRAVEL TIPS</h2><br>
+	<p>
+		<a href="#">Start Here</a><br><a href="#">Travel Blog</a><br><a href="#">Destination Guides</a><br><a href="#">Teaching Overseas<br></a><a href="#">Guidebooks</a>
+	</p>
+	</div>
+	<div style="margin-left:50px;width:185px;margin-top:20px;float:left;font-size:15px;font-family:arial;">
+	<h2>COMMUNITY</h2><br>
+	<p>
+		<a href="#">Forums & Events</a><br><a href="#">Book Club</a><br><a href="#">Patreon</a><br><a href="#">FLYTE<br></a><a href="#">Blogging Course</a>
+	</p>
+	</div>
+	<div style="margin-left:50px;margin-top:20px;width:205px;float:left;font-size:15px;font-family:arial;">
+	<h2>BOOK YOUR TRIP</h2><br>
+	<p>
+		<a href="#">Accomodation</a><br><a href="#">Cheap Flights</a><br><a href="#">Travel Insurance</a><br><a href="#">Travel Credit Cards<br></a><a href="#">Favorite Companies</a>
+	</p>
+	</div>
+	<div style="margin-left:50px;margin-top:20px;width:290px;float:left;font-size:15px;font-family:arial;">
+		<h2>SEARCH</h2>
+		<input style="margin-top:10px;width:290px;height:50px;" type="text" id="search3" placeholder="  Search this site here.."><br><br>
+		<h2>FOLLOW ME ON THE WEB</h2>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<a href="#" class="fa fa-pinterest"></a>
+	<br><br><br><br>
+	</div>
+	<center>Copyright © 2020 · Nomadic Matt’s Travel Site</center>
+</div>
+</body>
+</html>	
